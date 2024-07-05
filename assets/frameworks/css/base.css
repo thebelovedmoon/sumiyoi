@@ -16,3 +16,21 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+footer {
+  background-color: var(--sumiyoiPink);
+  width: 100vw;
+  padding: 1rem;
+}
+footer > div {
+  width: 50rem;
+  max-width: 100%;
+  /* background-color: black; */
+  text-align: right;
+  margin: 0 auto;
+  color: var(--sumiyoiDark);
+  font-weight: 500;
+}
+footer > div > span {
+  display: block;
+}

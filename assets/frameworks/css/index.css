@@ -20,24 +20,6 @@ div[soon] > img {
   object-position: center top;
 }
 
-footer {
-  background-color: var(--sumiyoiPink);
-  width: 100vw;
-  padding: 1rem;
-}
-footer > div {
-  width: 50rem;
-  max-width: 100%;
-  /* background-color: black; */
-  text-align: right;
-  margin: 0 auto;
-  color: var(--sumiyoiDark);
-  font-weight: bold;
-}
-footer > div > span {
-  display: block;
-}
-
 img, video {
   display: block;
   max-width: 100%;
