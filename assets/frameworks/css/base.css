@@ -1,0 +1,18 @@
+@import url("/sumiyoi/assets/frameworks/css/font.css");
+
+:root {
+  --sumiyoiDark: #111;
+  --sumiyoiLight: #595959;
+  --sumiyoiPink: #e27faf;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+* {
+  box-sizing: border-box;
+}

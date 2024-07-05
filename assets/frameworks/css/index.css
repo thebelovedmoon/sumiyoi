@@ -1,0 +1,47 @@
+html {
+  background-color: var(--sumiyoiDark);
+}
+body {
+  background: linear-gradient(to bottom right, var(--sumiyoiDark) 25%, var(--sumiyoiLight));
+  font-family: "Kiwi Maru", serif;
+  color: white;
+}
+
+div[soon] {
+  padding: 10rem 1rem 0 1rem;
+  text-align: center;
+}
+div[soon] > img {
+  width: auto;
+  height: 960px;
+  max-height: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  object-position: center top;
+}
+
+footer {
+  background-color: var(--sumiyoiPink);
+  width: 100vw;
+  padding: 1rem;
+}
+footer > div {
+  width: 50rem;
+  max-width: 100%;
+  /* background-color: black; */
+  text-align: right;
+  margin: 0 auto;
+  color: var(--sumiyoiDark);
+  font-weight: bold;
+}
+footer > div > span {
+  display: block;
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+  margin: 0 auto;
+}
