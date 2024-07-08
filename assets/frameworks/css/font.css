@@ -1,1 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap");
+
+@font-face {
+  font-family: "OTFMaru";
+  src: url("/sumiyoi/assets/font/OTFMaru-R.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "OTFMaru";
+  src: url("/sumiyoi/assets/font/OTFMaru-M.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "OTFMaru";
+  src: url("/sumiyoi/assets/font/OTFMaru-B.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "OTFMaru";
+  src: url("/sumiyoi/assets/font/OTFMaru-H.otf") format("opentype");
+  font-weight: 900;
+}

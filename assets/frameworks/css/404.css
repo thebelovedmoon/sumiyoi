@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(to bottom right, var(--sumiyoiDark) 25%, var(--sumiyoiLight));
+}
+
 div[notfound] {
   width: 100vw;
   height: 100vh;

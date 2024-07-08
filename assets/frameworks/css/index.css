@@ -2,22 +2,9 @@ html {
   background-color: var(--sumiyoiDark);
 }
 body {
-  background: linear-gradient(to bottom right, var(--sumiyoiDark) 25%, var(--sumiyoiLight));
+  /* background: linear-gradient(to bottom right, var(--sumiyoiDark) 25%, var(--sumiyoiLight)); */
   font-family: "Kiwi Maru", serif;
   color: white;
-}
-
-div[soon] {
-  padding: 10rem 1rem 0 1rem;
-  text-align: center;
-}
-div[soon] > img {
-  width: auto;
-  height: 960px;
-  max-height: 100%;
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
-  object-position: center top;
 }
 
 img, video {
@@ -26,4 +13,154 @@ img, video {
   height: auto;
   pointer-events: none;
   margin: 0 auto;
+}
+
+button {
+  background-color: var(--sumiyoiPink);
+  color: var(--sumiyoiDark);
+  padding: .75rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  font-family: inherit;
+  font-size: calc(inherit / 4);
+  font-weight: 500;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #be628f;
+}
+
+div[bgImg] {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div[transtPart] {
+  width: 100vw;
+  height: 25rem;
+  margin-top: 25rem;
+  background-color: var(--sumiyoiPink);
+  /* box-shadow: 0 1rem 1.5rem var(--sumiyoiPink); */
+  z-index: 2;
+}
+
+div[introStick] {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+div[introBG] {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+div[introBG] > img, video {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+div[introBG] > div {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  background-color: #11111180;
+}
+
+[sumiyoi1] {
+  background-image: url("/sumiyoi/assets/images/yomeirikousou/178ced21442acc226e8f6d7563c04e57.png");
+  background-position: 60% center !important;
+}
+div[sumiyoi1] > div {
+  padding: 15rem 1.5rem;
+  background-color: #111111c0;
+}
+div[sumiyoi1] > div > div {
+  width: 50rem;
+  max-width: 100%;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+div[sumiyoi1] > div > div > span[cite] {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-style: italic;
+  margin: 1rem;
+}
+
+div[secHead] {
+  width: 100vw;
+  padding: 1.5rem;
+}
+div[secHead] > h2 {
+  margin: 0 !important;
+}
+
+/* implementation thanks to https://stackoverflow.com/questions/66925129/forcing-inline-block-elements-to-scroll-horizontally-while-still-allowing-vertic */
+div[scrollFeed] {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+div[scrollFeed] > img {
+  width: 640px;
+  max-width: initial;
+  height: 360px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+  pointer-events: initial;
+  cursor: pointer;
+  flex-shrink: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+div[scrollFeed] > img:hover {
+  width: 820px;
+}
+
+div[socFeed] > img {
+  width: 480px;
+  height: 240px;
+}
+div[socFeed] > img:hover {
+  width: 640px;
+}
+
+footer {
+  background-color: var(--sumiyoiPink);
+  width: 100vw;
+  padding: 1rem;
+}
+footer > div {
+  width: 75rem;
+  max-width: 100%;
+  /* background-color: black; */
+  text-align: right;
+  margin: 0 auto;
+  color: var(--sumiyoiDark);
+  font-weight: 500;
+}
+footer > div > span {
+  display: block;
 }
