@@ -26,10 +26,19 @@ function redir(r, p) {
     } else {
       window.open(r, "_blank");
     }
-  } else if ((r != null) && (p.toLowerCase() == "nutaku")) {
-    alert("Nutaku (18+) ID: " + r);
-  } else if ((r != null) && (p.toLowerCase() == "johren")) {
-    alert("Johren (18+) ID: " + r);
+  } else if ((r != null) && ((p.toLowerCase() == "nutaku") || (p.toLowerCase() == "johren"))) {
+    let r18 =
+      "THIS IS AN 18+ SITE!!\n" +
+      "are you sure to proceed?";
+    if (confirm(r18) == true) {
+      if (p.toLowerCase() == "nutaku") {
+        alert("Nutaku (18+) ID: " + r);
+      } else if (p.toLowerCase() == "johren") {
+        alert("Johren (18+) ID: " + r);
+      }
+    } else {
+      alert("please be sure that you are 18 y/o to access the website.")
+    }
   } else {
     alert("under development!!");
   }

@@ -140,11 +140,17 @@ div[scrollFeed] > img:hover {
 }
 
 div[socFeed] > img {
-  width: 480px;
-  height: 240px;
+  width: 360px;
+  height: 160px;
 }
 div[socFeed] > img:hover {
-  width: 640px;
+  width: 480px;
+}
+div[socFeed] > img[firstVal] {
+  margin-left: 6.25rem;
+}
+div[socFeed] > img[lastVal] {
+  margin-right: 6.25rem;
 }
 
 footer {
