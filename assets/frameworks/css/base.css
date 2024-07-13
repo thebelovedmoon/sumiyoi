@@ -14,7 +14,16 @@ html, body {
   overflow-x: hidden;
   word-wrap: break-word;
   scrollbar-width: thin;
+  background-color: var(--sumiyoiDark);
 }
 * {
   box-sizing: border-box;
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+  margin: 0 auto;
 }

@@ -1,0 +1,238 @@
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+html, body {
+  background-color: black;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body {
+  position: relative;
+  font-family: "Nanum Myeongjo", "Zen Old Mincho", serif;
+  cursor: wait;
+  color: white;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#loadingScreen {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+#loadingScreen > div {
+  width: 50rem;
+  max-width: 100%;
+}
+span[loadingCircle] {
+  font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 24 !important;
+  font-size: 5rem;
+  aspect-ratio: 1 / 1;
+  -webkit-animation: loadSpin 2s linear infinite;
+  -moz-animation: loadSpin 2s linear infinite;
+  -o-animation: loadSpin 2s linear infinite;
+  animation: loadSpin 2s linear infinite;
+}
+@-webkit-keyframes loadSpin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes loadSpin {
+  0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); }
+}
+@-o-keyframes loadSpin {
+  0% { -o-transform: rotate(0deg); }
+  100% { -o-transform: rotate(360deg); }
+}
+@keyframes loadSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+div[id^="nav"] {
+  position: relative;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#nav1 {
+  display: block;
+}
+#nav2, #nav3, #nav4 {
+  display: none;
+}
+
+div[padder] {
+  width: 100%;
+  height: 20rem;
+}
+div[numIntro], div[yoshidaText] {
+  padding: 0 1.5rem;
+}
+div[numIntro], div[yoshidaText] > div {
+  width: 75rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+div[numIntro] > div > p {
+  font-size: 1.25rem;
+}
+div[numIntro] > div > h1 {
+  font-size: 20rem;
+  margin: 0;
+}
+
+/* implementation thanks to https://stackoverflow.com/questions/66925129/forcing-inline-block-elements-to-scroll-horizontally-while-still-allowing-vertic */
+div[scrl] {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+div[scrlRev] {
+  flex-direction: row-reverse !important;
+}
+div[scrl] > img {
+  width: 640px;
+  max-width: initial;
+  height: 360px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+  pointer-events: initial;
+  cursor: pointer;
+  flex-shrink: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+div[scrl] > img:hover {
+  width: 820px;
+}
+div[arrowBack] {
+  padding: 1.5rem;
+}
+div[arrowBack] > div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+p > b {
+  font-weight: 800;
+}
+
+span[yoshidaBtn] {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  padding: .75rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: white .1rem solid;
+  background-color: black;
+  color: white;
+}
+span[yoshidaBtn]:hover {
+  border: black .1rem solid;
+  background-color: white;
+  color: black;
+}
+
+footer {
+  text-align: right;
+}
+footer > span {
+  display: block;
+}
+
+.brokenglass {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 25;
+  background-image: url("/sumiyoi/assets/images/177013/brokenglass.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  pointer-events: none;
+}
+
+audio {
+  display: none;
+}
+
+div[behindGlass] {
+  position: relative;
+  /* -webkit-transform: translateY(-100vh); */
+  /* -moz-transform: translateY(-100vh); */
+  /* -ms-transform: translateY(-100vh); */
+  /* -o-transform: translateY(-100vh); */
+  /* transform: translateY(-100vh); */
+}
+div[behindGlass] > div {
+  width: 75rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+img[yoshidaImg] {
+  width: 100vw;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+[noInvert] {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+div[progressbar] {
+  position: relative;
+  width: 50rem;
+  max-width: 100%;
+  margin: 0 auto;
+  height: .625rem;
+  border-radius: 999px;
+  background-color: white;
+}
+div[yoshidaProgress] {
+  position: absolute;
+  width: 2%;
+  height: inherit;
+  border-radius: inherit;
+  background-color: var(--sumiyoiPink);
+}

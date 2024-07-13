@@ -6,15 +6,6 @@ body {
   font-family: "Kiwi Maru", serif;
   color: white;
 }
-
-img, video {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  pointer-events: none;
-  margin: 0 auto;
-}
-
 button {
   background-color: var(--sumiyoiPink);
   color: var(--sumiyoiDark);
@@ -39,6 +30,7 @@ div[bgImg] {
 }
 
 div[transtPart] {
+  position: relative;
   width: 100vw;
   height: 25rem;
   margin-top: 25rem;
@@ -51,7 +43,6 @@ div[introStick] {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: -1;
 }
 div[introBG] {
   position: relative;
@@ -153,7 +144,12 @@ div[socFeed] > img[lastVal] {
   margin-right: 6.25rem;
 }
 
+div[scrlPanels] {
+  position: relative;
+}
+
 footer {
+  position: relative;
   background-color: var(--sumiyoiPink);
   width: 100vw;
   padding: 1rem;
