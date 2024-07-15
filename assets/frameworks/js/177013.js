@@ -19,6 +19,8 @@ function navSetup() {
     document.getElementById("nav3").style.display = "none";
     document.getElementById("nav4").style.display = "block";
     document.body.style.cursor = "initial";
+    document.getElementById("breathing").play();
+    document.getElementById("heartbeat").play();
   } else {
     dismissLoading();
   }

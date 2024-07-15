@@ -231,7 +231,7 @@ div[progressbar] {
 }
 div[yoshidaProgress] {
   position: absolute;
-  width: 2%;
+  width: 5%;
   height: inherit;
   border-radius: inherit;
   background-color: var(--sumiyoiPink);
