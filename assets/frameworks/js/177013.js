@@ -21,6 +21,7 @@ function navSetup() {
     document.body.style.cursor = "initial";
     document.getElementById("breathing").play();
     document.getElementById("heartbeat").play();
+    scanForInput();
   } else {
     dismissLoading();
   }
@@ -49,4 +50,32 @@ function fadeTranst(n) {
   setTimeout(() => {
     window.location.replace("?nav=" + n);
   }, 500);
+}
+
+function scanForInput() {
+  document.addEventListener("keydown", (e) => {
+    const target = "yoshida saki";
+    if (!window.keysListen) {
+      window.keysListen = {
+        progress: 0,
+        originalTitle: document.title,
+      };
+    }
+    const expectedChar = target[window.keysListen.progress];
+    if (e.key.length === 1 && e.key.toLowerCase() === expectedChar) {
+      window.keysListen.progress++;
+      document.title = target.slice(0, window.keysListen.progress);
+      if (window.keysListen.progress === target.length) {
+        window.keysListen.progress = 0;
+        document.title = window.keysListen.originalTitle;
+        document.body.style.opacity = "0";
+        setTimeout(() => {
+          window.location.replace("https://177013.github.io");
+        }, 500);
+      }
+    } else if (e.key.length === 1) {
+      window.keysListen.progress = 0;
+      document.title = window.keysListen.originalTitle;
+    }
+  });
 }
