@@ -1,0 +1,22 @@
+.pge404 {
+  background-color: #111;
+  color: white;
+  font-family: "Kiwi Maru", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+.pge404 > div * {
+  display: block;
+  margin: 0 auto;
+}
+
+.btnList * {
+  background-color: #e27faf;
+  color: black;
+  box-shadow: 0 3.75px 7.5px #000000a0;
+}
+.btnList *:hover { background-color: #c56e98; }
