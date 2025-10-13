@@ -1,3 +1,9 @@
+function yoshidaChecker() {
+  if (!Boolean(document.cookie.split("; ").find((row) => row.startsWith("isYoshida="))?.split("=")[1]).valueOf()) {
+    document.location.replace("/sumiyoi/");
+  }
+}
+
 function showHeaderLogoWhenSize() {
   if (window.innerWidth < 480) { document.querySelector('img[yoshidaLogo]').src = '/sumiyoi/assets/images/177013/Project177013_logo_mini.jpg'; }
   else { document.querySelector('img[yoshidaLogo]').src = '/sumiyoi/assets/images/177013/Project177013_logo.png'; }
@@ -11,7 +17,7 @@ function headerResize() {
 function breakScreen() {
   document.querySelector(".brokenGlass").setAttribute("style", "display: block;");
   document.querySelector(".brokenGlassBG").setAttribute("style", "display: block;");
-  document.querySelector("span[onclick='breakScreen();']").remove();
+  document.querySelector("span[onclick='{ breakScreen(); }']").remove();
   document.querySelector("audio").src = "/sumiyoi/assets/audio/breaking-glass-83809.mp3";
   document.querySelector("audio").play();
   setTimeout(() => {

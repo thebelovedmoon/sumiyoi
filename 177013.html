@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sakura Sumiyoi">
     <title>【Project:177013】</title>
-    <link rel="icon" href="/sumiyoi/assets/images/177013/Project177013_logo_mini.jpg" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/sumiyoi/assets/images/177013/Project177013_logo_mini.jpg" type="image/x-icon">
+    <link rel="icon" href="https://em-content.zobj.net/source/microsoft-3D-fluent/406/rose_1f339.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://em-content.zobj.net/source/microsoft-3D-fluent/406/rose_1f339.png" type="image/x-icon">
     <meta name="og:type" content="website">
     <meta name="og:title" content="【Project:177013】">
     <meta name="og:image" content="https://thebelovedmoon.github.io/sumiyoi/assets/images/177013/preview.png">
@@ -30,6 +30,7 @@
     <script type="text/javascript">
       function pageInit() {
         // pageInit() exec
+        yoshidaChecker();
         showHeaderLogoWhenSize();
       }
     </script>
@@ -37,7 +38,7 @@
       // inpage js
     </script>
   </head>
-  <body onload="init()" onresize="{ headerResize(); }">
+  <body onload="{ init(); }" onresize="{ headerResize(); }">
     <audio style="width: 0; height: 0;"></audio>
     <div class="brokenGlassBG"></div>
     <div class="brokenGlass"></div>
@@ -47,9 +48,9 @@
     <header>
       <img yoshidaLogo alt="">
       <div>
-        <span class="material-symbols-rounded" title="oh? what's this hammer doin here??" onclick="breakScreen();">hardware</span>
-        <span class="material-symbols-rounded" title="visit the project's website" onclick="window.open('https://177013.github.io')">open_in_new</span>
-        <span class="material-symbols-rounded" title="explore the other side.." onclick="window.location.replace('/sumiyoi/')">swap_horizontal_circle</span>
+        <span class="material-symbols-rounded" title="oh? what's this hammer doin here??" onclick="{ breakScreen(); }">hardware</span>
+        <span class="material-symbols-rounded" title="visit the project's website" onclick="{ window.open('https://177013.github.io'); }">open_in_new</span>
+        <span class="material-symbols-rounded" title="explore the other side.." onclick="{ window.location.replace('/sumiyoi/'); }">swap_horizontal_circle</span>
       </div>
     </header>
     <div class="mainHead">
@@ -88,7 +89,7 @@
         </p>
         <br>
         <div class="btnList">
-          <button onclick="window.open('https://github.com/177013')">GitHub</button>
+          <button onclick="{ window.open('https://github.com/177013'); }">GitHub</button>
         </div>
       </div>
     </div>
@@ -102,13 +103,13 @@
         </p>
         <br>
         <div class="btnList">
-          <button onclick="window.open('https://x.com/SakuraSumiyoi')">X</button>
+          <button onclick="{ window.open('https://x.com/SakuraSumiyoi'); }">X</button>
         </div>
       </div>
     </div>
     <footer>
       <p>Metamorphosis and related media © 2016 FAKKU, nhentai, and Shindo L</p>
-      <p>© 2020 a vTbmassoc venture</p>
+      <p>© 2020 a vTbmassoc project</p>
     </footer>
   </body>
 </html>

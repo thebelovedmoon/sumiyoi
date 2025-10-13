@@ -37,14 +37,19 @@
       // inpage js
     </script>
   </head>
-  <body onload="init()" onresize="{ headerResize(); }">
+  <body onload="{ init(); }" onresize="{ headerResize(); }">
     <div class="loadingScr"><div>
       <img src="/sumiyoi/assets/images/mahotan/loadingFlwr.png" alt="">
     </div></div>
     <header>
       <img sumiyoiLogo alt="">
       <div>
-        <span class="material-symbols-rounded" title="explore the other side.." onclick="window.location.replace('/sumiyoi/177013')">swap_horizontal_circle</span>
+        <span class="material-symbols-rounded" title="explore the other side.." onclick="{
+          if (!Boolean(document.cookie.split('; ').find((row) => row.startsWith('isYoshida='))?.split('=')[1]).valueOf()) {
+            document.cookie = 'isYoshida=true';
+          }
+          window.location.replace('/sumiyoi/177013');
+        }">swap_horizontal_circle</span>
       </div>
     </header>
     <div class="mainHead">
@@ -94,10 +99,10 @@
         <h3>yearly curations</h3>
         <br>
         <div class="btnList">
-          <button onclick="window.open('https://youtube.com/playlist?list=PLF03i1Sr1R1-nGEUWvs0xEA3AS4ZX6eQ2')">2022</button>
-          <button onclick="window.open('https://youtube.com/playlist?list=PLF03i1Sr1R193xQ-LnXHlET3IDKUIYXDm')">2023</button>
-          <!-- <button onclick="window.open('https://youtube.com/playlist?list=PLF03i1Sr1R1-nGEUWvs0xEA3AS4ZX6eQ2')">2024</button> -->
-          <!-- <button onclick="window.open('https://youtube.com/playlist?list=PLF03i1Sr1R1-nGEUWvs0xEA3AS4ZX6eQ2')">2025</button> -->
+          <button onclick="{ window.open('https://youtube.com/playlist?list=PLF03i1Sr1R1-nGEUWvs0xEA3AS4ZX6eQ2'); }">2022</button>
+          <button onclick="{ window.open('https://youtube.com/playlist?list=PLF03i1Sr1R193xQ-LnXHlET3IDKUIYXDm'); }">2023</button>
+          <!-- <button onclick="{ window.open('https://youtube.com/playlist?list=PLF03i1Sr1R1-nGEUWvs0xEA3AS4ZX6eQ2'); }">2024</button> -->
+          <!-- <button onclick="{ window.open('https://youtube.com/playlist?list=PLF03i1Sr1R1-nGEUWvs0xEA3AS4ZX6eQ2'); }">2025</button> -->
         </div>
       </div>
     </div>
@@ -107,7 +112,7 @@
         <br>
         <p>
           this is not just a project that seeks to re-explore the narrative that makes
-          metamorphism a sensation in the doujinshi community, but also a gateway on
+          Metamorphosis a sensation in the doujinshi community, but also a gateway on
           what we come to experience a red-light activity -- and how to act on it.
         </p>
         <br>
@@ -122,18 +127,18 @@
         <h2>socials</h2>
         <br>
         <div class="btnList">
-          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="window.open('https://x.com/SakuraSumiyoi')">X</button>
-          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="window.open('https://youtube.com/@SakuraSumiyoi')">YouTube</button>
-          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="window.open('https://hanime.tv/channels/sakurasumiyoi-1983')">hanime.tv</button>
-          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="window.open('https://fansly.com/SakuraSumiyoi')">Fansly</button>
-          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="alert('Nutaku (18+) ID: 66975466')">Nutaku</button>
-          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="alert('Johren (18+) ID: 1943318')">Johren</button>
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ window.open('https://x.com/SakuraSumiyoi'); }">X</button>
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ window.open('https://youtube.com/@SakuraSumiyoi'); }">YouTube</button>
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ window.open('https://hanime.tv/channels/sakurasumiyoi-1983'); }">hanime.tv</button>
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ window.open('https://fansly.com/SakuraSumiyoi'); }">Fansly</button>
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ alert('Nutaku (18+) ID: 66975466'); }">Nutaku</button>
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ alert('Johren (18+) ID: 1943318'); }">Johren</button>
         </div>
       </div>
     </div>
     <footer>
       <p>Sumiyoi Sakura, Ojou-sama☆Yomeiri Kousou!, and related resources © 2012 Mary Jane</p>
-      <p>© 2020 a vTbmassoc venture</p>
+      <p>© 2020 a vTbmassoc project</p>
     </footer>
   </body>
 </html>
