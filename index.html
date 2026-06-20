@@ -1,66 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>we're moving!!</title>
-    <link
-      rel="stylesheet"
-      href="https://177013.github.io/assets/css/_main.css"
-      type="text/css"
-    />
-    <script src="/assets/js/_main.js" type="text/javascript"></script>
-    <link rel="icon" href="/sumiyoi/favicon.png" type="image/x-icon" />
-    <link
-      rel="apple-touch-icon"
-      href="/sumiyoi/favicon.png"
-      type="image/x-icon"
-    />
-    <meta name="theme-color" content="#e27faf" />
-    <meta name="msapplication-TileColor" content="#e27faf" />
-    <meta name="msapplication-navbutton-color" content="#e27faf" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#e27faf" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sakura Sumiyoi">
+    <title>墨宵🌸桜Ch.</title>
+    <link rel="icon" href="https://thebelovedmoon.github.io/sumiyoi/assets/images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://thebelovedmoon.github.io/sumiyoi/assets/images/favicon.png" type="image/x-icon">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="墨宵🌸桜Ch.">
+    <meta name="og:image" content="https://thebelovedmoon.github.io/assets/images/preview.png">
+    <meta name="og:url" content="https://thebelovedmoon.github.io/sumiyoi">
+    <meta name="og:description" content="私がここにいたことは護様には内緒です！">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SakuraSumiyoi">
+    <meta name="theme-color" content="#e27faf">
+    <meta name="msapplication-TileColor" content="#e27faf">
+    <meta name="msapplication-navbutton-color" content="#e27faf">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#e27faf">
+    <!-- css -->
+    <link rel="stylesheet" href="/sumiyoi/assets/frameworks/css/base.css" type="text/css" media="all">
     <style type="text/css">
-      .ctr {
-        div {
-          width: 500px;
-          max-width: 100%;
-        }
-      }
-      button {
-        display: inline-block;
-        font-size: inherit;
-        background-color: #e27faf;
-        color: black;
-        border: none;
-        font-family: inherit;
-        margin-top: 0.5em;
-        padding: 0.5em 1em;
-        font-weight: bold;
-        border-radius: 9999px;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: #c56e98;
-      }
+      /* inpage css */
+      @import url("/sumiyoi/assets/frameworks/css/index.css");
     </style>
+    <script src="/sumiyoi/assets/frameworks/js/base.js" type="text/javascript"></script>
+    <script src="/sumiyoi/assets/frameworks/js/index.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function pageInit() {
+        // pageInit() exec
+      }
+    </script>
+    <script type="text/javascript">
+      // inpage js
+    </script>
   </head>
-  <body>
-    <div class="ctr">
-      <div>
-        <h1>we're moving!!</h1>
-        <br />
-        <p>
-          【Project:177013】 is the new home of the Sumiyoi, as well as other
-          projects aiming to preserve the Metamorphisan Legacy and give light to
-          our mission in offering solutions to real-world issues.
-        </p>
-        <br>
-        <p>learn more about our mission by clicking the button below:</p>
-        <button onclick="{ window.open('https://tbmassoc.github.io/vtNet/sumiyoi'); }">learn more on vtNet</button>
-        <br /><br />
-        <p class="tbmassoc-brand">©2020 <b>vtNet</b>, a tbmassoc network</p>
+  <body onload="init()">
+    <div introStick>
+      <div introBG>
+        <video src="/sumiyoi/assets/videos/cherryblossom.mp4" autoplay muted loop type="video/mp4"></video>
+        <div>
+          <div>
+            <img src="/sumiyoi/assets/images/logo/dark.png" alt="墨宵🌸桜Ch." width="375px">
+            <br>
+            <span><b>VTuber&emsp;&#8226;&emsp;Anime&emsp;&#8226;&emsp;Manga</b></span>
+          </div>
+        </div>
       </div>
     </div>
+    <div transtPart></div>
+    <div bgImg sumiyoi1>
+      <div>
+        <div>
+          <h2>a new chapter beyond Yomeiri Kousou</h2>
+          <p>
+            with the cohabitation between Ageha and Mamoru, Sakura enters a new chapter in
+            her life -- full of uncertainties and opportunities that will enable her to
+            live a normal life that she always wanted.
+          </p>
+          <p>
+            she's now able to move freely -- out of reach from her clan as she pursues her
+            dreams.
+          </p>
+          <p>
+            but with the uncertainties still looming under her skin, affecting her daily
+            life and her relationship -- how would she be able to move forward?
+          </p>
+          <p><b>her story continues..</b></p>
+          <br>
+          <button onclick="redir()">read the story</button>
+          <span cite>clip © 2012 Mary Jane</span>
+        </div>
+      </div>
+    </div>
+    <div scrlPanels>
+      <div secHead style="background-color: var(--sumiyoiGray);">
+        <h2>current ventures</h2>
+      </div>
+      <div scrollFeed style="background-color: var(--sumiyoiGray);">
+        <img onclick="redir()" src="/sumiyoi/assets/images/mahotan/mahoroba_epilogue.png" alt="Mahoroba's Epilogue" title="Mahoroba's Epilogue">
+        <img onclick="redir('https://bit.ly/MahotanStory')" src="/sumiyoi/assets/images/mahotan/lifeafter.png" alt="Life after Mahotan ～ まほたん後の人生 ～" title="Life after Mahotan ～ まほたん後の人生 ～">
+        <img onclick="redir('https://bit.ly/346Story')" src="/sumiyoi/assets/images/mahotan/346.png" alt="346: Scourge" title="346: Scourge">
+        <img onclick="redir('https://youtube.com/playlist?list=PLF03i1Sr1R1-nGEUWvs0xEA3AS4ZX6eQ2')" src="/sumiyoi/assets/images/yearinmanga/2022_head.png" alt="2022年の桜のマンガ ～Sakura's Mangas of 2022～" title="2022年の桜のマンガ ～Sakura's Mangas of 2022～">
+        <img onclick="redir('https://youtube.com/playlist?list=PLF03i1Sr1R193xQ-LnXHlET3IDKUIYXDm')" src="/sumiyoi/assets/images/yearinmanga/2023_head.png" alt="2023年の桜のマンガ ～Sakura's Mangas of 2023～" title="2023年の桜のマンガ ～Sakura's Mangas of 2023～">
+        <img onclick="redir()" src="/sumiyoi/assets/images/yearinmanga/2024_head.png" alt="2024年の桜のマンガ ～Sakura's Mangas of 2024～" title="2024年の桜のマンガ ～Sakura's Mangas of 2024～">
+        <img onclick="window.open('177013')" src="/sumiyoi/assets/images/177013/preview.png" alt="re[M]ember 177013" title="re[M]ember 177013">
+      </div>
+      <div secHead style="background-color: var(--sumiyoiDark);">
+        <h2>socials</h2>
+      </div>
+      <div scrollFeed socFeed style="background-color: var(--sumiyoiDark);">
+        <img firstVal onclick="redir('https://x.com/SakuraSumiyoi')" src="/sumiyoi/assets/images/socials/X.png" alt="X" title="X">
+        <img onclick="redir('https://youtube.com/@SakuraSumiyoi')" src="/sumiyoi/assets/images/socials/youtube.png" alt="YouTube" title="YouTube">
+        <img onclick="redir('https://hanime.tv/channels/sakurasumiyoi-1983')" src="/sumiyoi/assets/images/socials/hanime.png" alt="Hanime.tv🔞" title="Hanime.tv🔞">
+        <img onclick="redir('https://fansly.com/SakuraSumiyoi')" src="/sumiyoi/assets/images/socials/fansly.png" alt="Fansly🔞" title="Fansly🔞">
+        <img onclick="redir(66975466, 'Nutaku')" src="/sumiyoi/assets/images/socials/nutaku.png" alt="Nutaku🔞" title="Nutaku🔞">
+        <img lastVal onclick="redir(1943318, 'Johren')" src="/sumiyoi/assets/images/socials/johren.png" alt="Johren🔞" title="Johren🔞">
+      </div>
+    </div>
+    <footer>
+      <div>
+        <span>Sumiyoi Sakura, Ojou-sama&#9734;Yomeiri Kousou!, and related resources © 2012 Mary Jane</span>
+        <span>© 2020 a vTbmassoc venture</span>
+      </div>
+    </footer>
   </body>
 </html>
