@@ -1,66 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>we're moving!!</title>
-    <link
-      rel="stylesheet"
-      href="https://177013.github.io/assets/css/_main.css"
-      type="text/css"
-    />
-    <script src="/assets/js/_main.js" type="text/javascript"></script>
-    <link rel="icon" href="/sumiyoi/favicon.png" type="image/x-icon" />
-    <link
-      rel="apple-touch-icon"
-      href="/sumiyoi/favicon.png"
-      type="image/x-icon"
-    />
-    <meta name="theme-color" content="#e27faf" />
-    <meta name="msapplication-TileColor" content="#e27faf" />
-    <meta name="msapplication-navbutton-color" content="#e27faf" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#e27faf" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sakura Sumiyoi">
+    <title>墨宵🌸桜Ch.</title>
+    <link rel="icon" href="/sumiyoi/assets/images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/sumiyoi/assets/images/favicon.png" type="image/x-icon">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="墨宵🌸桜Ch.">
+    <meta name="og:image" content="https://thebelovedmoon.github.io/sumiyoi/assets/images/preview.png">
+    <meta name="og:url" content="https://thebelovedmoon.github.io/sumiyoi">
+    <meta name="og:description" content="私がここにいたことは護様には内緒です！">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SakuraSumiyoi">
+    <meta name="theme-color" content="#e27faf">
+    <meta name="msapplication-TileColor" content="#e27faf">
+    <meta name="msapplication-navbutton-color" content="#e27faf">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#e27faf">
+    <!-- css -->
+    <link rel="stylesheet" href="/sumiyoi/assets/css/_main.css" type="text/css" media="all">
     <style type="text/css">
-      .ctr {
-        div {
-          width: 500px;
-          max-width: 100%;
-        }
-      }
-      button {
-        display: inline-block;
-        font-size: inherit;
-        background-color: #e27faf;
-        color: black;
-        border: none;
-        font-family: inherit;
-        margin-top: 0.5em;
-        padding: 0.5em 1em;
-        font-weight: bold;
-        border-radius: 9999px;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: #c56e98;
-      }
+      /* inpage css */
+      @import url("/sumiyoi/assets/css/core.css");
+      @import url("/sumiyoi/assets/css/nav/index.css");
     </style>
+    <script src="/sumiyoi/assets/js/_main.js" type="text/javascript"></script> <!-- main -->
+    <script src="/sumiyoi/assets/js/nav/index.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function pageInit() {
+        // pageInit() exec
+        showHeaderLogoWhenSize();
+      }
+    </script>
+    <script type="text/javascript">
+      // inpage js
+    </script>
   </head>
-  <body>
-    <div class="ctr">
+  <body onload="{ init(); }" onresize="{ headerResize(); }">
+    <div class="loadingScr"><div>
+      <img src="/sumiyoi/assets/images/mahotan/loadingFlwr.png" alt="">
+    </div></div>
+    <header>
+      <img sumiyoiLogo alt="">
       <div>
-        <h1>we're moving!!</h1>
-        <br />
-        <p>
-          【Project:177013】 is the new home of the Sumiyoi, as well as other
-          projects aiming to preserve the Metamorphisan Legacy and give light to
-          our mission in offering solutions to real-world issues.
-        </p>
+        <span class="material-symbols-rounded" title="explore the other side.." onclick="{
+          if (!Boolean(document.cookie.split('; ').find((row) => row.startsWith('isYoshida='))?.split('=')[1]).valueOf()) {
+            document.cookie = 'isYoshida=true';
+          }
+          window.location.replace('/sumiyoi/177013');
+        }">swap_horizontal_circle</span>
+      </div>
+    </header>
+    <div class="mainHead">
+      <div>
+        <img style="margin: 0 auto; width: 45rem; max-width: 100%;" src="/sumiyoi/assets/images/logo/dark.png" alt="墨宵🌸桜Ch.">
         <br>
-        <p>learn more about our mission by clicking the button below:</p>
-        <button onclick="{ window.open('https://tbmassoc.github.io/vtNet/sumiyoi'); }">learn more on vtNet</button>
-        <br /><br />
-        <p class="tbmassoc-brand">©2020 <b>vtNet</b>, a tbmassoc network</p>
+        <h3>VTuber&emsp;&bull;&emsp;Anime&emsp;&bull;&emsp;Manga</h3>
       </div>
     </div>
+    <div class="bodyText" style="background-image: url('/sumiyoi/assets/images/yomeirikousou/178ced21442acc226e8f6d7563c04e57.png'); background-position: 65% top;">
+      <div>
+        <h2>a new chapter beyond Yomeiri Kousou</h2>
+        <br>
+        <p>
+          with the cohabitation between Ageha and Mamoru, Sakura enters a new chapter in
+          her life -- full of uncertainties and opportunities that will enable her to
+          live a normal life that she always wanted.
+        </p>
+        <br>
+        <p>
+          she's now able to move freely -- out of reach from her clan as she pursues her
+          dreams.
+        </p>
+        <br>
+        <p>
+          but with the uncertainties still looming under her skin, affecting her daily
+          life and her relationship -- how would she be able to move forward?
+        </p>
+        <br>
+        <p><b>her story continues..</b></p>
+      </div>
+    </div>
+    <div class="bodyText" style="background-image: url('/sumiyoi/assets/images/yearinmanga/yearinmanga_2023_no-ovl.png'); background-position: center center;">
+      <div style="background-color: #e27fafd0; color: black;">
+        <h2>continually curating mangas since 2022</h2>
+        <br>
+        <p>
+          outside of her daily activities, she's actively engaging in manga reading and
+          curation that picks out the best ones based on her perception.
+        </p>
+        <br>
+        <p>
+          new curations are added every day, with the best of the best curated on a
+          yearly basis.
+        </p>
+        <br>
+        <h3>yearly curations</h3>
+        <br>
+        <div class="btnList">
+          <button onclick="{ window.open('https://youtube.com/playlist?list=PLF03i1Sr1R1-nGEUWvs0xEA3AS4ZX6eQ2'); }">2022</button>
+          <button onclick="{ window.open('https://youtube.com/playlist?list=PLF03i1Sr1R193xQ-LnXHlET3IDKUIYXDm'); }">2023</button>
+          <!-- <button onclick="{ window.open('https://youtube.com/playlist?list=PLF03i1Sr1R1-nGEUWvs0xEA3AS4ZX6eQ2'); }">2024</button> -->
+          <!-- <button onclick="{ window.open('https://youtube.com/playlist?list=PLF03i1Sr1R1-nGEUWvs0xEA3AS4ZX6eQ2'); }">2025</button> -->
+        </div>
+      </div>
+    </div>
+    <div class="bodyText" style="background-image: url('/sumiyoi/assets/images/177013/preview.png'); background-position: 65% 40%;">
+      <div style="background-color: #ff0000d0;">
+        <h2>the metamorphisan legacy continues..</h2>
+        <br>
+        <p>
+          this is not just a project that seeks to re-explore the narrative that makes
+          Metamorphosis a sensation in the doujinshi community, but also a gateway on
+          what we come to experience a red-light activity -- and how to act on it.
+        </p>
+        <br>
+        <p>
+          to experience the other side of the story, click the icon on the top-right
+          corner of the page.
+        </p>
+      </div>
+    </div>
+    <div class="bodyText" style="background-image: unset; background-color: black;">
+      <div>
+        <h2>socials</h2>
+        <br>
+        <div class="btnList">
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ window.open('https://x.com/SakuraSumiyoi'); }">X</button>
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ window.open('https://youtube.com/@SakuraSumiyoi'); }">YouTube</button>
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ window.open('https://hanime.tv/channels/sakurasumiyoi-1983'); }">hanime.tv</button>
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ window.open('https://fansly.com/SakuraSumiyoi'); }">Fansly</button>
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ alert('Nutaku (18+) ID: 66975466'); }">Nutaku</button>
+          <button style="box-shadow: 0 3.75px 7.5px #ffffff40;" onclick="{ alert('Johren (18+) ID: 1943318'); }">Johren</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Sumiyoi Sakura, Ojou-sama☆Yomeiri Kousou!, and related resources ©2012 Mary Jane</p>
+      <p>©2020 vtNet, a tbmassoc network</p>
+    </footer>
   </body>
 </html>

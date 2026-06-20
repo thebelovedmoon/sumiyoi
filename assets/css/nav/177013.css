@@ -1,0 +1,135 @@
+html { background-color: red; }
+body { font-family: "Special Elite", "Kiwi Maru", system-ui, serif; }
+
+.loadingScr {
+  background-color: #0ff;
+  background-image: url("/sumiyoi/assets/images/177013/79893af3c4134fd8dd16ac8520d4a406.jpg");
+}
+.loadingScr > div {
+  -webkit-backdrop-filter: blur(1.5rem) invert(1);
+  backdrop-filter: blur(1.5rem) invert(1);
+}
+
+header .material-symbols-rounded:hover { color: red !important; }
+
+.mainHead {
+  background-color: #0ff;
+  background-image: url("/sumiyoi/assets/images/177013/79893af3c4134fd8dd16ac8520d4a406.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+.mainHead > div {
+  -webkit-backdrop-filter: blur(calc(1.5rem / 4)) invert(1);
+  backdrop-filter: blur(calc(1.5rem / 4)) invert(1);
+  padding: calc(15rem + calc(1.5rem * 2.5)) 1.5rem 15rem 1.5rem;
+  background-color: #00000080;
+  text-align: center;
+}
+.mainHead > div * { display: block; }
+
+.bodyText {
+  background-color: red;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 6rem 0;
+}
+.bodyText > div {
+  width: 62.5rem;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  background-color: #000000a0;
+  border-radius: 1.5rem;
+}
+
+.btnList * {
+  background-color: red;
+  color: white;
+  box-shadow: 0 3.75px 7.5px #ffffff40;
+}
+.btnList *:hover { background-color: #c40000; }
+
+.yoshidaE {
+  display: -moz-grid;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: black;
+  padding-top: 1rem;
+}
+.yoshidaE * { display: block; }
+.yoshidaE > img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 8;
+  -o-object-fit: cover;
+  -o-object-position: center top;
+  object-fit: cover;
+  object-position: center top;
+}
+.yoshidaE > div {
+  width: 100%;
+  height: 100%;
+  padding: calc(3rem - 1rem) 1.5rem 3rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.yoshidaE > div > div > h2 > span { display: inline-block; }
+@media screen and (max-width: 720px) {
+  .yoshidaE {
+    padding: 0;
+    grid-template-columns: 100%;
+  }
+  .yoshidaE > div { padding: 3rem 1.5rem; }
+}
+
+.brokenGlassBG {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-color: white;
+  z-index: 8000;
+  -webkit-animation: flashAnim 5s;
+  -moz-animation: flashAnim 5s;
+  -o-animation: flashAnim 5s;
+  animation: flashAnim 5s;
+}
+@-webkit-keyframes flashAnim {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes flashAnim {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes flashAnim {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes flashAnim {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.brokenGlass {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-image: url("/sumiyoi/assets/images/177013/brokenglass.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 9000;
+}
