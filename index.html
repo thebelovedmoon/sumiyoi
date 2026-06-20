@@ -9,7 +9,7 @@
       href="https://177013.github.io/assets/css/_main.css"
       type="text/css"
     />
-    <script src="/assets/js/_main.js" type="text/javascript"></script>
+    <script src="/sumiyoi/timer.js" type="text/javascript"></script>
     <link rel="icon" href="/sumiyoi/favicon.png" type="image/x-icon" />
     <link
       rel="apple-touch-icon"
@@ -23,7 +23,7 @@
     <style type="text/css">
       .ctr {
         div {
-          width: 500px;
+          width: 625px;
           max-width: 100%;
         }
       }
@@ -45,7 +45,7 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="{ countTimer(); }">
     <div class="ctr">
       <div>
         <h1>we're moving!!</h1>
@@ -58,6 +58,9 @@
         <br>
         <p>learn more about our mission by clicking the button below:</p>
         <button onclick="{ window.open('https://tbmassoc.github.io/vtNet/sumiyoi'); }">learn more on vtNet</button>
+        <br><br>
+        <p>total archival and closure will commence in:</p>
+        <h1 class="timer">00:00:00:00</h1>
         <br /><br />
         <p class="tbmassoc-brand">©2020 <b>vtNet</b>, a tbmassoc network</p>
       </div>
