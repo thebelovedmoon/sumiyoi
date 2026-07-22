@@ -37,7 +37,11 @@ function countTimer() {
             </div>
           </div>
         `;
-        document.body.onclick = () => { window.open("https://177013.github.io"); }
+        document.body.onclick = () => { window.location.replace("https://177013.github.io"); }
+        document.title = `website is now closed.`;
+        document.querySelectorAll("link[rel*='icon']").forEach((icn) => {
+          icn.href = `https://em-content.zobj.net/source/microsoft-3D-fluent/406/rose_1f339.png`;
+        });
       }, 0);
     }
   }, 1000);
